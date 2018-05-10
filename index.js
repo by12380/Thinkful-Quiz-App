@@ -217,7 +217,7 @@ function renderProblemPage(problem) {
 function renderFeedbackCorrectPage() {
   $('.js-content-loader').hide().html(`
     <div class="feedback-page">
-      <h3>Correct!</h3>
+      <h2>Correct!</h2>
       <img class="correct-logo" src="https://www.shareicon.net/download/2016/08/20/817720_check.svg" alt="Check logo">
       <form id="feedback">
         <div class="btn-container">
@@ -232,7 +232,7 @@ function renderFeedbackCorrectPage() {
 function renderFeedbackWrongPage() {
   $('.js-content-loader').hide().html(`
     <div class="feedback-page">
-      <h3>Wrong</h3>
+      <h2>Wrong</h2>
       <img class="wrong-logo" src="http://www.clker.com/cliparts/1/1/9/2/12065738771352376078Arnoud999_Right_or_wrong_5.svg.med.png" alt="Wrong logo">
       <div>
         <p>The correct answer is:</p>
@@ -251,7 +251,7 @@ function renderFeedbackWrongPage() {
 function renderQuizProgressPage() {
   $('.js-header-loader').html(`
     <div class="quiz-progress">
-      <p>Question: ${APP_DATA.currentProblemIndex + 1} / ${PROBLEMS.length}</p>
+      <h1>Question: ${APP_DATA.currentProblemIndex + 1} / ${PROBLEMS.length}</h1>
     </div>`)
 }
 
